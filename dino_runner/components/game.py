@@ -36,8 +36,8 @@ class Game:
         self.clock.tick(FPS)
         self.screen.fill((255, 255, 255))
         self.draw_background()
-        pygame.display.update()
-        pygame.display.flip()
+        pygame.display.update() #update objects inside
+        pygame.display.flip() #display/show
 
     def draw_background(self):
         image_width = BG.get_width()
